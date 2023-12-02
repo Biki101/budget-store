@@ -48,3 +48,48 @@
     </div>
   </div>
 </div>
+
+<div
+  class="bg-[var(--primary-black)] text-[var(--primary-white)] border-b-[4px] border-[var(--primary-red)]"
+>
+  <div class="container flex justify-between items-center h-[100px]">
+    <div class="text-[30px] font-[600]">
+      Budget Store<span class="text-[var(--primary-red)] rounded-full">.</span>
+    </div>
+
+    <div>
+      <select name="" id="" class="form-select">
+        <option selected [disabled]="true" hidden>All Categories</option>
+        <option value="">Category 1</option>
+        <option value="">Category 2</option>
+        <option value="">Category 3</option>
+      </select>
+      <input type="text" placeholder="Search Here" class="form-input" />
+      <button class="button">Search</button>
+    </div>
+
+    <div class="flex gap-[50px]">
+      <div class="flex flex-col items-center">
+        <div class="relative">
+          <mat-icon class="text-[22px]">favorite_border</mat-icon>
+          <span
+            class="absolute top-[-10px] right-[-15px] bg-[var(--primary-red)] rounded-full w-[20px] h-[20px] flex items-center justify-center text-[10px]"
+            >2</span
+          >
+        </div>
+        <div class="small-font">Your Wishlist</div>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="relative">
+          <mat-icon class="text-[22px]">shopping_cart</mat-icon>
+          <span
+            class="absolute top-[-10px] right-[-15px] bg-[var(--primary-red)] rounded-full w-[20px] h-[20px] flex items-center justify-center text-[10px]"
+            >3</span
+          >
+        </div>
+        <div class="small-font">Your Cart</div>
+      </div>
+    </div>
+  </div>
+</div>
