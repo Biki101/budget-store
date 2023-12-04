@@ -5,9 +5,17 @@ import { AppComponent } from './app.component';
 import { TopbarModule } from './components/topbar/topbar.module';
 import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
 import { FooterModule } from './components/footer/footer.module';
+import { HomeComponent } from './components/home/home.component';
+import { HotDealsComponent } from './components/hot-deals/hot-deals.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { LaptopsComponent } from './components/laptops/laptops.component';
+import { SmartphonesComponent } from './components/smartphones/smartphones.component';
+import { CamerasComponent } from './components/cameras/cameras.component';
+import { AccessoriesComponent } from './components/accessories/accessories.component';
+import { CategoryCardComponent } from './components/home/category-card/category-card.component';
 
 @NgModule({
-  declarations: [AppComponent, NavBarComponent],
+  declarations: [AppComponent, NavBarComponent, HomeComponent, HotDealsComponent, CategoriesComponent, LaptopsComponent, SmartphonesComponent, CamerasComponent, AccessoriesComponent, CategoryCardComponent],
   imports: [BrowserModule, AppRoutingModule, TopbarModule, FooterModule],
   providers: [],
   bootstrap: [AppComponent],

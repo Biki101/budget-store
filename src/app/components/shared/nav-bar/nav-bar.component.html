@@ -1,13 +1,33 @@
 <div class="border-b-[2px] border-[-var(--border-color)]">
   <ul class="flex container gap-[24px] medium-font">
     <li class="nav-item">
-      <span class="active-nav"> Home </span>
+      <span routerLinkActive="active-nav" routerLink="/home"> Home </span>
     </li>
-    <li class="nav-item"><span> Hot Deals </span></li>
-    <li class="nav-item"><span> Categories </span></li>
-    <li class="nav-item"><span> Laptops </span></li>
-    <li class="nav-item"><span> Smartphones </span></li>
-    <li class="nav-item"><span> Cameras </span></li>
-    <li class="nav-item"><span> Accessories </span></li>
+    <li class="nav-item">
+      <span routerLink="hotdeals" routerLinkActive="active-nav">
+        Hot Deals
+      </span>
+    </li>
+    <li class="nav-item">
+      <span routerLink="categories" routerLinkActive="active-nav">
+        Categories
+      </span>
+    </li>
+    <li class="nav-item">
+      <span routerLink="laptops" routerLinkActive="active-nav"> Laptops </span>
+    </li>
+    <li class="nav-item">
+      <span routerLink="smartphones" routerLinkActive="active-nav">
+        Smartphones
+      </span>
+    </li>
+    <li class="nav-item">
+      <span routerLink="cameras" routerLinkActive="active-nav"> Cameras </span>
+    </li>
+    <li class="nav-item">
+      <span routerLink="accessories" routerLinkActive="active-nav">
+        Accessories
+      </span>
+    </li>
   </ul>
 </div>
