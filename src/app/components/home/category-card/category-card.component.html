@@ -1,8 +1,10 @@
 <div
   class="h-[240px] relative overflow-hidden"
-  style="
-    background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE1fHxsYXB0b3AlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D');
-  "
+  [style]="{
+    'background-image': 'url(' + data.imgUrl + ')',
+    'bacground-size': 'cover',
+    'bacground-position': 'center'
+  }"
 >
   <div
     class="h-[540px] w-[240px] opacity-70 top-[-140px] left-[-50px] absolute bg-[var(--primary-red)]"
@@ -10,7 +12,7 @@
   ></div>
   <div class="flex flex-col opacity-70 text-[var(--primary-white)] p-[30px]">
     <span class="text-[24px] font-[600]"
-      >Laptop <br />
+      >{{ data?.title }} <br />
       Collection</span
     >
     <span class="small-font">SHOP NOW</span>
