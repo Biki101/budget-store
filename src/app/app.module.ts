@@ -13,9 +13,22 @@ import { SmartphonesComponent } from './components/smartphones/smartphones.compo
 import { CamerasComponent } from './components/cameras/cameras.component';
 import { AccessoriesComponent } from './components/accessories/accessories.component';
 import { CategoryCardComponent } from './components/home/category-card/category-card.component';
+import { NewProductsComponent } from './components/home/new-products/new-products.component';
 
 @NgModule({
-  declarations: [AppComponent, NavBarComponent, HomeComponent, HotDealsComponent, CategoriesComponent, LaptopsComponent, SmartphonesComponent, CamerasComponent, AccessoriesComponent, CategoryCardComponent],
+  declarations: [
+    AppComponent,
+    NavBarComponent,
+    HomeComponent,
+    HotDealsComponent,
+    CategoriesComponent,
+    LaptopsComponent,
+    SmartphonesComponent,
+    CamerasComponent,
+    AccessoriesComponent,
+    CategoryCardComponent,
+    NewProductsComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, TopbarModule, FooterModule],
   providers: [],
   bootstrap: [AppComponent],

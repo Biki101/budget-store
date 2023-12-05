@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="flex justify-between items-center">
+    <span class="large-title">NEW PRODUCTS</span>
+    <ul class="flex gap-[12px]">
+      <li
+        class="cursor-pointer"
+        [ngClass]="{
+          'text-[var(--primary-red)] border-b-[2px] border-[var(--primary-red)]':
+            activeCategory == 'laptops'
+        }"
+        (click)="activeCategory = 'laptops'"
+      >
+        Laptops
+      </li>
+      <li
+        class="cursor-pointer"
+        [ngClass]="{
+          'text-[var(--primary-red)] border-b-[2px] border-[var(--primary-red)]':
+            activeCategory == 'smartphones'
+        }"
+        (click)="activeCategory = 'smartphones'"
+      >
+        Smartphones
+      </li>
+      <li
+        class="cursor-pointer"
+        [ngClass]="{
+          'text-[var(--primary-red)] border-b-[2px] border-[var(--primary-red)]':
+            activeCategory == 'cameras'
+        }"
+        (click)="activeCategory = 'cameras'"
+      >
+        Cameras
+      </li>
+      <li
+        class="cursor-pointer"
+        [ngClass]="{
+          'text-[var(--primary-red)] border-b-[2px] border-[var(--primary-red)]':
+            activeCategory == 'accessories'
+        }"
+        (click)="activeCategory = 'accessories'"
+      >
+        Accessories
+      </li>
+    </ul>
+  </div>
+
+  <div></div>
+</div>

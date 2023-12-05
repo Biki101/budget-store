@@ -7,6 +7,10 @@
   --placeholder-color: #b9babc;
 }
 
+body {
+  font-family: "Signika Negative", sans-serif;
+}
+
 .container {
   width: 1080px;
   margin: auto;
@@ -26,4 +30,9 @@
 
 .small-icon {
   margin-top: 12px;
+}
+
+.large-title {
+  font-size: 20px;
+  font-weight: 600;
 }
