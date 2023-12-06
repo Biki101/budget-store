@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="flex justify-between items-center">
+  <div class="flex justify-between items-center pt-[15px] pb-[30px]">
     <span class="large-title">NEW PRODUCTS</span>
     <ul class="flex gap-[12px]">
       <li
@@ -45,5 +45,15 @@
     </ul>
   </div>
 
-  <div></div>
+  <div>
+    <ngx-slick-carousel
+      class="carousel"
+      #slickModal="slick-carousel"
+      [config]="slideConfig"
+    >
+      <div ngxSlickItem *ngFor="let slide of sildeData" class="slide">
+        <img [src]="slide?.imgUrl" alt="" class="img-style" />
+      </div>
+    </ngx-slick-carousel>
+  </div>
 </div>

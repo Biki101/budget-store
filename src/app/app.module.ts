@@ -14,6 +14,7 @@ import { CamerasComponent } from './components/cameras/cameras.component';
 import { AccessoriesComponent } from './components/accessories/accessories.component';
 import { CategoryCardComponent } from './components/home/category-card/category-card.component';
 import { NewProductsComponent } from './components/home/new-products/new-products.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,13 @@ import { NewProductsComponent } from './components/home/new-products/new-product
     CategoryCardComponent,
     NewProductsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, TopbarModule, FooterModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    TopbarModule,
+    FooterModule,
+    SlickCarouselModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
