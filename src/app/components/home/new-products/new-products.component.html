@@ -45,13 +45,14 @@
     </ul>
   </div>
 
-  <div>
+  <div *ngFor="let slideData of data">
     <ngx-slick-carousel
+      *ngIf="slideData?.name == activeCategory"
       class="carousel"
       #slickModal="slick-carousel"
       [config]="slideConfig"
     >
-      <div ngxSlickItem *ngFor="let slide of sildeData" class="slide">
+      <div ngxSlickItem *ngFor="let slide of slideData?.data" class="slide">
         <img [src]="slide?.imgUrl" alt="" class="img-style" />
       </div>
     </ngx-slick-carousel>

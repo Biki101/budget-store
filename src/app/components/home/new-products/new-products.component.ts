@@ -1,4 +1,10 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  TemplateRef,
+  ViewChild,
+  ViewEncapsulation,
+} from '@angular/core';
 
 @Component({
   selector: 'app-new-products',
@@ -9,9 +15,13 @@ import { Component, ViewEncapsulation } from '@angular/core';
 export class NewProductsComponent {
   activeCategory = 'laptops';
 
+  @ViewChild('carousel', { static: true }) caraousel!: TemplateRef<any>;
+
+  constructor(private cdr: ChangeDetectorRef) {}
+
   data = [
     {
-      name: 'mobile',
+      name: 'smartphones',
       data: [
         {
           imgUrl:
@@ -40,7 +50,7 @@ export class NewProductsComponent {
       ],
     },
     {
-      name: 'laptop',
+      name: 'laptops',
       data: [
         {
           imgUrl:
@@ -65,7 +75,7 @@ export class NewProductsComponent {
       ],
     },
     {
-      name: 'camera',
+      name: 'cameras',
       data: [
         {
           imgUrl:
@@ -102,7 +112,15 @@ export class NewProductsComponent {
         },
         {
           imgUrl:
+            'https://plus.unsplash.com/premium_photo-1687892166031-828cc6574c15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29uc29sZXxlbnwwfHwwfHx8MA%3D%3D',
+        },
+        {
+          imgUrl:
             'https://images.unsplash.com/photo-1585298723682-7115561c51b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhlYWRwaG9uZXN8ZW58MHx8MHx8fDA%3D',
+        },
+        {
+          imgUrl:
+            'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29uc29sZXxlbnwwfHwwfHx8MA%3D%3D',
         },
         {
           imgUrl:
@@ -112,7 +130,7 @@ export class NewProductsComponent {
     },
   ];
 
-  sildeData = this.data[3]?.data;
+  // sildeData = this.data[1]?.data;
 
   slideConfig = {
     slidesToShow: 4,
