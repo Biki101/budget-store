@@ -25,7 +25,7 @@ export class NewProductsComponent {
       data: [
         {
           imgUrl:
-            'https://images.unsplash.com/photo-1555375771-14b2a63968a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c21hcnQlMjBwaG9uZXN8ZW58MHx8MHx8fDA%3D',
+            'https://images.unsplash.com/photo-1597740985671-2a8a3b80502e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fG1vYmlsZXxlbnwwfHwwfHx8MA%3D%3D',
         },
         {
           imgUrl:
@@ -37,7 +37,7 @@ export class NewProductsComponent {
         },
         {
           imgUrl:
-            'https://images.unsplash.com/photo-1618658848098-354b39109799?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHNtYXJ0JTIwcGhvbmVzfGVufDB8fDB8fHww',
+            'https://images.unsplash.com/photo-1596558450268-9c27524ba856?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fG1vYmlsZXxlbnwwfHwwfHx8MA%3D%3D',
         },
         {
           imgUrl:
