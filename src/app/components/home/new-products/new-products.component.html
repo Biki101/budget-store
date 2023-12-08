@@ -53,7 +53,8 @@
       [config]="slideConfig"
     >
       <div ngxSlickItem *ngFor="let slide of slideData?.data" class="slide">
-        <img [src]="slide?.imgUrl" alt="" class="img-style" />
+        <!-- <img [src]="slide?.imgUrl" alt="" class="img-style" /> -->
+        <app-product-card [product]="slide"></app-product-card>
       </div>
     </ngx-slick-carousel>
   </div>

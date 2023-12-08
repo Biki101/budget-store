@@ -15,6 +15,8 @@ import { AccessoriesComponent } from './components/accessories/accessories.compo
 import { CategoryCardComponent } from './components/home/category-card/category-card.component';
 import { NewProductsComponent } from './components/home/new-products/new-products.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { ProductCardComponent } from './components/product-card/product-card.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     AccessoriesComponent,
     CategoryCardComponent,
     NewProductsComponent,
+    ProductCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     TopbarModule,
     FooterModule,
     SlickCarouselModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

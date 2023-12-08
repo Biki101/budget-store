@@ -1,0 +1,28 @@
+<div class="flex flex-col items-center">
+  <div class="relative p-[2px]">
+    <img [src]="product?.imgUrl" alt="" class="img-style z-[1]" />
+    <div
+      class="flex flex-col justify-between items-center w-[250px] h-[300px] absolute top-0 left-0 z-[2]"
+    >
+      <div class="flex items-center justify-between w-full">
+        <mat-icon class="ml-4 text-[var(--primary-white)]">visibility</mat-icon>
+        <div class="flex gap-[4px] p-[12px]">
+          <span class="secondary-button">30%</span>
+          <span class="primary-button">New</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex items-center justify-between bg-[var(--primary-black)] w-[250px] p-[12px] text-[var(--primary-white)]"
+  >
+    <div class="flex flex-col">
+      <span>Category</span>
+      <span>Name</span>
+    </div>
+    <div class="flex flex-col items-end">
+      <span class="large-font">$980</span>
+      <span class="primary-button text-[12px]">ADD TO CART</span>
+    </div>
+  </div>
+</div>
