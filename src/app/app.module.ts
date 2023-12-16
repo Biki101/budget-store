@@ -17,6 +17,7 @@ import { NewProductsComponent } from './components/home/new-products/new-product
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { MatIconModule } from '@angular/material/icon';
+import { TopSellingComponent } from './components/home/top-selling/top-selling.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MatIconModule } from '@angular/material/icon';
     CategoryCardComponent,
     NewProductsComponent,
     ProductCardComponent,
+    TopSellingComponent,
   ],
   imports: [
     BrowserModule,

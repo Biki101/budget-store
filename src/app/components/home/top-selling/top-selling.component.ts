@@ -1,22 +1,16 @@
-import {
-  ChangeDetectorRef,
-  Component,
-  TemplateRef,
-  ViewChild,
-  ViewEncapsulation,
-} from '@angular/core';
+import { Component, TemplateRef, ViewChild } from '@angular/core';
 import { ShopDataService } from 'src/app/services/shop-data.service';
 
 @Component({
-  selector: 'app-new-products',
-  templateUrl: './new-products.component.html',
-  styleUrls: ['./new-products.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+  selector: 'app-top-selling',
+  templateUrl: './top-selling.component.html',
+  styleUrls: ['./top-selling.component.scss'],
 })
-export class NewProductsComponent {
-  activeCategory = 'laptops';
+export class TopSellingComponent {
+  activeCategory = 'cameras';
 
   @ViewChild('carousel', { static: true }) caraousel!: TemplateRef<any>;
+
   data: any = [];
 
   slideConfig = {
@@ -40,6 +34,6 @@ export class NewProductsComponent {
   };
 
   constructor(private dataService: ShopDataService) {
-    this.data = this.dataService.data;
+    this.data = dataService.data;
   }
 }

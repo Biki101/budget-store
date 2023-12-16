@@ -1,0 +1,61 @@
+<div class="container py-[30px]">
+  <div class="flex justify-between items-center pt-[15px] pb-[30px]">
+    <span class="large-title">NEW PRODUCTS</span>
+    <ul class="flex gap-[12px]">
+      <li
+        class="cursor-pointer"
+        [ngClass]="{
+          'text-[var(--primary-red)] border-b-[2px] border-[var(--primary-red)]':
+            activeCategory == 'cameras'
+        }"
+        (click)="activeCategory = 'cameras'"
+      >
+        Cameras
+      </li>
+      <li
+        class="cursor-pointer"
+        [ngClass]="{
+          'text-[var(--primary-red)] border-b-[2px] border-[var(--primary-red)]':
+            activeCategory == 'laptops'
+        }"
+        (click)="activeCategory = 'laptops'"
+      >
+        Laptops
+      </li>
+      <li
+        class="cursor-pointer"
+        [ngClass]="{
+          'text-[var(--primary-red)] border-b-[2px] border-[var(--primary-red)]':
+            activeCategory == 'smartphones'
+        }"
+        (click)="activeCategory = 'smartphones'"
+      >
+        Smartphones
+      </li>
+      <li
+        class="cursor-pointer"
+        [ngClass]="{
+          'text-[var(--primary-red)] border-b-[2px] border-[var(--primary-red)]':
+            activeCategory == 'accessories'
+        }"
+        (click)="activeCategory = 'accessories'"
+      >
+        Accessories
+      </li>
+    </ul>
+  </div>
+
+  <div *ngFor="let slideData of data">
+    <ngx-slick-carousel
+      *ngIf="slideData?.name == activeCategory"
+      class="carousel"
+      #slickModal="slick-carousel"
+      [config]="slideConfig"
+    >
+      <div ngxSlickItem *ngFor="let slide of slideData?.data" class="slide">
+        <!-- <img [src]="slide?.imgUrl" alt="" class="img-style" /> -->
+        <app-product-card [product]="slide"></app-product-card>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</div>
