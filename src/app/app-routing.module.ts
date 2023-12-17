@@ -5,7 +5,6 @@ import { AccessoriesComponent } from './components/accessories/accessories.compo
 import { CamerasComponent } from './components/cameras/cameras.component';
 import { SmartphonesComponent } from './components/smartphones/smartphones.component';
 import { LaptopsComponent } from './components/laptops/laptops.component';
-import { CategoriesComponent } from './components/categories/categories.component';
 import { HotDealsComponent } from './components/hot-deals/hot-deals.component';
 
 const routes: Routes = [
@@ -17,10 +16,6 @@ const routes: Routes = [
   {
     path: 'hotdeals',
     component: HotDealsComponent,
-  },
-  {
-    path: 'categories',
-    component: CategoriesComponent,
   },
   {
     path: 'laptops',

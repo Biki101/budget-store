@@ -7,7 +7,6 @@ import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
 import { FooterModule } from './components/footer/footer.module';
 import { HomeComponent } from './components/home/home.component';
 import { HotDealsComponent } from './components/hot-deals/hot-deals.component';
-import { CategoriesComponent } from './components/categories/categories.component';
 import { LaptopsComponent } from './components/laptops/laptops.component';
 import { SmartphonesComponent } from './components/smartphones/smartphones.component';
 import { CamerasComponent } from './components/cameras/cameras.component';
@@ -25,7 +24,6 @@ import { TopSellingComponent } from './components/home/top-selling/top-selling.c
     NavBarComponent,
     HomeComponent,
     HotDealsComponent,
-    CategoriesComponent,
     LaptopsComponent,
     SmartphonesComponent,
     CamerasComponent,
